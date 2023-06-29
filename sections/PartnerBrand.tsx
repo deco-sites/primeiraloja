@@ -11,8 +11,8 @@ export interface Props {
 
 export default function PartnerBrand({ brand }: Props) {
   return (
-    <div>
-      <a href={brand?.href} alt={brand?.alt}>
+    <div class='flex items-center justify-center'>
+      <a href={brand?.href} alt={brand?.alt} class='text-center'>
         <h1 class="font-bold">{brand?.name}</h1>
         {brand?.image && <img src={brand?.image} />}
       </a>
